@@ -1,3 +1,17 @@
+.sidebar-top-text:hover{
+    color: white !important;
+    cursor: pointer;
+}
+
+.sidebar-top-text:focus{
+    background-color: red;
+}
+
+
+
+
+/* Navbar Hover*/
+
 .hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
