@@ -1,8 +1,10 @@
 /* GLOBAL 
 ------------------>*/
 body{
-    background-color: #181818; 
+    background-color: rgb(9, 65, 87); 
     z-index: 0;
+    font-family: "Circular";
+    
 }
 
 /* Page Structure
@@ -17,8 +19,19 @@ body{
 #mainpage{
     margin-left: 16.6%;
     width: 90vh;
-    
-    background-color: #181818;
+    position: relative;
+    background-color: rgb(9, 65, 87);
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(65,65,65);
+background: linear-gradient(132deg, rgba(65,65,65,0) 0%, rgba(4,4,4,0.2858018207282913) 36%, rgba(0,0,0,0.8936449579831933) 100%);
 }
 
 #player{
@@ -51,4 +64,28 @@ img#logo{
     margin-bottom: 2rem;
     width: 70%;
     height: 20%;
+}
+
+
+
+/* MainPage
+------------>*/
+
+    /* Main Navbar
+       -----------> */
+
+#mainpage nav ul li {
+    font-size: .8rem;
+   
+}
+
+#mainpage div.collapse.navbar-collapse{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-10%);
+}
+
+#mainpage button{
+    
 }
