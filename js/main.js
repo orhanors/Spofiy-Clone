@@ -38,7 +38,11 @@ const navPages = function(currentPageItem){
     let pages = document.querySelectorAll("section.page");
 
     for(let page of pages){
-        let pageLinkText = currentPageItem.firstElementChild.innerText.toLowerCase()
+        let  = currentPageItem.firstElementChild.innerText.toLowerCase()
+
+        let split = currentPageItem.firstElementChild.innerText.split(" ")
+        let pageLinkText = split.join("-").toLowerCase()
+       
 
         if(page.classList.contains("displayShow")){
             page.classList.remove("displayShow")

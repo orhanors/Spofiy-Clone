@@ -15,6 +15,7 @@ section.page{
 
 section.page.displayShow{
     display: block;
+    overflow: hidden;
 }
 
 /* Page Structure
@@ -36,6 +37,7 @@ section.page.displayShow{
 #mainpage::before {
     content: "";
     position: absolute;
+    
     top: 0;
     left: 0;
     right: 0;
@@ -80,7 +82,7 @@ img#logo{
 
 /*  MAIN PAGE
 ------------>*/
-#mainpage section:nth-of-type(1){
+#mainpage section.page>section:nth-of-type(1){
     margin-top:8%;  /*TODO this can be change*/
 
 }
