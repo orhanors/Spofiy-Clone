@@ -1,19 +1,21 @@
 
-#body{
-    /* background-color: #050505; */
+body{
+    background-color: #181818; 
+    z-index: 0;
 }
-.row{
-    display: flex !important;
-}
+
+
 #sidebar{
-    
+    position: fixed; 
+    height: 90vh;
     background-color: #050505;
-    overflow-x: hidden;
-   
+    z-index: 1;
 }
 
 #mainpage{
-    margin-bottom: 10%;
+    margin-left: 16.6%;
+    width: 90vh;
+    
     background-color: #181818;
 }
 
