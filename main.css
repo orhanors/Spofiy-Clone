@@ -1,15 +1,21 @@
-#body {
+body {
   background-color: #050505;
 }
-
+.row {
+  display: flex !important;
+}
 #sidebar {
   background-color: #050505;
-  height: 100vh;
-  width: 16.6vw;
+  overflow-x: hidden;
 }
 
 #mainpage {
-  background-color: #181818;
-  height: 100vh;
-  width: 83.4vw;
+  margin-bottom: 10%;
+  background-color: #181818 !important;
+}
+
+#player {
+  width: 100vw;
+  height: 10%;
+  background-color: #282828 !important;
 }
