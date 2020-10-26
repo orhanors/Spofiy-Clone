@@ -36,12 +36,13 @@ div.sidebar-top{
     justify-content: start;
 }
 .sidebar-top-text{
-    margin-top: ;
+   
     display: flex;
     flex-direction: row;
-    font-size: ;
+    
     color:rgb(141, 140, 140);
 }
+
 .sidebar-top-text .sidebar-top-icons{
     margin-right: 1rem;
     color: white;
