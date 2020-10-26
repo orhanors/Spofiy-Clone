@@ -1,5 +1,6 @@
 /* GLOBAL 
 ------------------>*/
+
 body{
     background-color: rgb(9, 65, 87); 
     z-index: 0;
@@ -18,12 +19,13 @@ body{
 
 #mainpage{
     margin-left: 16.6%;
+    height: 100vh;
     width: 90vh;
     position: relative;
     background-color: rgb(9, 65, 87);
 }
 
-body::before{
+#mainpage::before{
     content: "";
     position: absolute;
     top: 0;
@@ -31,7 +33,7 @@ body::before{
     right: 0;
     bottom: 0;
     background: rgb(65,65,65);
-background: linear-gradient(132deg, rgba(65,65,65,0) 0%, rgba(4,4,4,0.2858018207282913) 36%, rgba(0,0,0,0.8936449579831933) 100%);
+    background: linear-gradient(132deg, rgba(65,65,65,0) 0%, rgba(4,4,4,0.2858018207282913) 36%, rgba(0,0,0,0.8936449579831933) 100%);
 }
 
 #player{
@@ -68,11 +70,19 @@ img#logo{
 
 
 
-/* MainPage
+/*  MAIN PAGE
 ------------>*/
+#mainpage section:nth-of-type(1){
+    margin-top:8%;  /*TODO this can be change*/
 
-    /* Main Navbar
-       -----------> */
+}
+#mainpage section{
+    margin-left: 9%;
+    margin-top: 3%;  /*TODO this can be change*/
+    color:white;
+}
+/* Main Navbar
+-----------> */
 
 #mainpage nav ul li {
     font-size: .8rem;
@@ -87,5 +97,18 @@ img#logo{
 }
 
 #mainpage button{
-    
+    /* TODO Re position collapsable menu button to the RIGHT*/
 }
+
+/* Main Cards
+---------------> */
+
+#mainpage .card{
+    background-color: transparent;
+    border: none;
+   
+}
+#mainpage .card .section-title{
+    font-weight: bold;
+}
+
