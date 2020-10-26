@@ -1,0 +1,24 @@
+body {
+  background-color: #181818 !important;
+}
+.row {
+  display: flex !important;
+}
+#sidebar {
+  background-color: #050505;
+  overflow-x: hidden;
+}
+
+#mainpage {
+  margin-bottom: 10%;
+  background-color: #181818 !important;
+}
+
+#player {
+  width: 100vw;
+  height: 10%;
+  background-color: #282828 !important;
+}
+.card {
+  background-color: #181818;
+}
