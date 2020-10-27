@@ -1,12 +1,15 @@
+const cardSizeForEachSection = 11;
+
 window.onload = function(){
-    navActive()
+    navActions()
+    cardActions()
 }
 
 /**
  * This function changes active class of navbar
  */
 
-const navActive = function(){
+const navActions = function(){
     let navList = document.querySelectorAll("nav ul li");
 
     for (let item of navList){
@@ -14,7 +17,7 @@ const navActive = function(){
         
         item.addEventListener("click", (e)=>{
             let currentListElement = e.target.parentElement;
-            console.log(currentListElement)
+           
             if (!(currentListElement.classList.contains("active"))){
                 
                 currentListElement.classList.add("active")
@@ -47,6 +50,29 @@ const navPages = function(currentPageItem){
         }
         if(page.classList.contains(pageLinkText)){
             page.classList.add("displayShow")
+        }
+    }
+}
+
+const cardActions = function(){
+    let sampleCard = document.querySelector("section.page div.row div.col")
+    let pages = document.querySelectorAll("section.page")
+    // let cards = document.querySelectorAll("section.page div.row div.col")
+    // console.log(cards)
+
+    for(let i=0;i<pages.length;i++){
+        let pageInnerSections = pages[i].querySelectorAll("section.container")
+        for(let j=0;j<pageInnerSections.length;j++){
+            let innerSectionRow = pageInnerSections[j].querySelector("div.row")
+            console.log(pageInnerSections[j])
+            for(let k = 0;k<cardSizeForEachSection; k++){
+                let newCard = sampleCard.cloneNode(true)
+                innerSectionRow.appendChild(newCard)
+            }
+            
+            
+
+
         }
     }
 }
