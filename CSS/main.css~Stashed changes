@@ -1,0 +1,56 @@
+/* GLOBAL 
+------------------>*/
+body {
+  background-color: #181818;
+  z-index: 0;
+}
+
+/* Page Structure
+------------------>*/
+#sidebar {
+  position: fixed;
+  height: 90vh;
+  background-color: #050505;
+  z-index: 1;
+}
+
+#mainpage {
+  margin-left: 16.6%;
+  width: 90vh;
+
+  background-color: #181818;
+}
+
+#player {
+  width: 100vw;
+  height: 10%;
+  background-color: #282828;
+}
+
+/*Sidebar
+---------->*/
+div.sidebar-top {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.sidebar-top-text {
+  display: flex;
+  flex-direction: row;
+
+  color: rgb(141, 140, 140);
+}
+
+.sidebar-top-text .sidebar-top-icons {
+  margin-right: 1rem;
+  color: white;
+}
+img#logo {
+  margin-bottom: 2rem;
+  width: 70%;
+  height: 20%;
+}
+.card {
+  background-color: #181818;
+}
