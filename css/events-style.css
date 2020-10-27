@@ -1,3 +1,15 @@
+/* MEDIA QUERIES
+---------------->*/
+
+
+
+
+
+
+
+
+
+
 .sidebar-top-text:hover{
     color: white !important;
     cursor: pointer;
@@ -57,4 +69,20 @@
     border:none;
     color:white;
     
+  }
+
+
+  /* ALBUM CARDS
+  --------------->*/
+
+  .card:hover .round-button{
+    display: block;
+    
+  }
+  
+  .round-button:hover{
+    opacity: 90%;
+    color:white;
+    box-shadow: 0px 0px 10px #55cf80;
+    text-shadow: 0px 0px 10px #1DB954;
   }

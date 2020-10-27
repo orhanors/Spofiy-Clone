@@ -110,15 +110,46 @@ img#logo{
     /* TODO Re position collapsable menu button to the RIGHT*/
 }
 
-/* Main Cards
+/* Cards
 ---------------> */
 
-#mainpage .card,#artistpage .card{
+.card{
     background-color: transparent;
     border: none;
+    position: relative;
    
 }
-#mainpage .card .section-title, #artistpage .card .section-title{
+
+
+.card .section-title{
     font-weight: bold;
 }
+
+.round-button {
+   
+	box-sizing: border-box;
+	display:none;
+	width:50px;
+	height:50px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	/* border: 6px solid #fff; */
+	border-radius: 50%;
+	color:#f5f5f5;
+	text-align:center;
+	text-decoration:none;
+	background-color: #1DB954;
+	font-size:20px;
+	font-weight:bold;
+    transition: all 0.3s ease;
+    
+    position: absolute;
+    z-index: 100;
+    bottom:80px;
+    right:7px;
+    
+}
+
+
 

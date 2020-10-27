@@ -3,6 +3,9 @@ const cardSizeForEachSection = 11;
 window.onload = function(){
     navActions()
     cardActionsMainPage()
+    cardIMGTemplate()
+    togglePlayButton()
+   
     // cardActionsArtistPage()
 }
 
@@ -65,16 +68,41 @@ const cardActionsMainPage = function(){
         let pageInnerSections = pages[i].querySelectorAll("section.container")
         for(let j=0;j<pageInnerSections.length;j++){
             let innerSectionRow = pageInnerSections[j].querySelector("div.row")
-            console.log(pageInnerSections[j])
+            
             for(let k = 0;k<cardSizeForEachSection; k++){
                 let newCard = sampleCard.cloneNode(true)
                 innerSectionRow.appendChild(newCard)
             }
-            
-            
-
-
         }
     }
 }
 
+const cardIMGTemplate = function(){
+    let cards = document.querySelectorAll(".card img");
+    let path = window.location.pathname;
+    let page = path.split("/").pop();
+    for(let img of cards){
+        if(page === "index.html"){
+            img["src"] = "./assets/Bohemian-Rhapsody.jpeg"
+        }else{
+            img["src"] = "../assets/Bohemian-Rhapsody.jpeg"
+            
+        }
+        
+    }
+
+}
+
+const togglePlayButton = function(){
+    let playButtons = document.querySelectorAll(".card .round-button");
+    let pauseButton = `<i class="mr-2 fas fa-grip-lines-vertical"></i>`
+    let playButton = `<i class="mb-2 mr-1 fa fa-play fa-sm"></i>`
+    for(let button of playButtons){
+        
+        button.addEventListener("click",(e)=>{
+            
+           
+        })
+
+    }
+}

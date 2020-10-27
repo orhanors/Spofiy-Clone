@@ -105,3 +105,8 @@ body{
     /* margin-left: 2rem; */
     color:white;
 }
+
+#artistPage .round-button{
+    position: absolute;
+    top:1000px;
+}
