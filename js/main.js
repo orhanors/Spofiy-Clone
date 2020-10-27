@@ -38,9 +38,7 @@ const navPages = function(currentPageItem){
     let pages = document.querySelectorAll("section.page");
 
     for(let page of pages){
-        let  = currentPageItem.firstElementChild.innerText.toLowerCase()
-
-        let split = currentPageItem.firstElementChild.innerText.split(" ")
+        let split = currentPageItem.firstElementChild.innerText.split(" ") //editing navtext to classname
         let pageLinkText = split.join("-").toLowerCase()
        
 
