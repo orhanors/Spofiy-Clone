@@ -11,7 +11,7 @@ window.onload = function(){
  */
 
 const navActions = function(){
-    let navList = document.querySelectorAll("#mainpage nav ul li");
+    let navList = document.querySelectorAll(".col-10 nav ul li");
 
     for (let item of navList){
         item.parentElement.classList.remove("active")
@@ -56,7 +56,7 @@ const navPages = function(currentPageItem){
 }
 
 const cardActionsMainPage = function(){
-    let sampleCard = document.querySelector("#mainpage section.page div.row div.col")
+    let sampleCard = document.querySelector(".col-10 section.page div.row div.col")
     let pages = document.querySelectorAll("section.page")
     // let cards = document.querySelectorAll("section.page div.row div.col")
     // console.log(cards)
