@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap');
 /* GLOBAL 
 ------------------>*/
 
@@ -21,6 +22,8 @@ section.page.displayShow{
 /* Page Structure
 ------------------>*/
 #sidebar{
+    font-family: 'Montserrat', sans-
+    serif;
     position: fixed; 
     height: 90vh;
     background-color: #050505;
@@ -59,6 +62,7 @@ div.sidebar-top{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    height: 70%;
 }
 .sidebar-top-text{
     
@@ -75,9 +79,16 @@ div.sidebar-top{
 img#logo{
     margin-bottom: 2rem;
     width: 70%;
-    height: 20%;
+   
 }
 
+#sidebar a{
+    text-decoration: none;
+}
+
+#sidebar .sidebar-top-text:nth-of-type(1){
+    z-index: 100;
+}
 
 
 /*  MAIN PAGE
