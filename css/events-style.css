@@ -43,3 +43,18 @@
     left: 0;
     right: 0;
   }
+
+  /*Artist Page Header Buttons*/
+
+  #artistpage .artist-top-image-buttons button:nth-of-type(1):hover,
+  #artistpage .artist-top-image-buttons button:nth-of-type(2):hover{
+    opacity: 80%;
+    font-size: 1.1rem;
+  }
+
+  #artistpage .artist-top-image-buttons button:nth-of-type(3):active{
+    background: none;
+    border:none;
+    color:white;
+    
+  }

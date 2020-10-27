@@ -87,7 +87,7 @@ img#logo{
 
 }
 #mainpage section{
-    margin-left: 9%;
+    margin-left: 1%;
     margin-top: 3%;  /*TODO this can be change*/
     color:white;
 }
@@ -113,12 +113,12 @@ img#logo{
 /* Main Cards
 ---------------> */
 
-#mainpage .card{
+#mainpage .card,#artistpage .card{
     background-color: transparent;
     border: none;
    
 }
-#mainpage .card .section-title{
+#mainpage .card .section-title, #artistpage .card .section-title{
     font-weight: bold;
 }
 
