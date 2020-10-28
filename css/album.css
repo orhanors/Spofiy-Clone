@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(24, 19, 19) ;
+     color: rgb(141, 140, 140);
+     
+    }
+image#bobmarley{
+    position: absolute;
+    margin-top : 50px;
+    
+    width: 70%;
+    height: 20%;
+}
+#mainpage p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    
+}
+#mainpage table{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: transparent;
+}
+
+/*Sidebar
+---------->*/
+div.sidebar-top{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.sidebar-top-text{
+    
+    display: flex;
+    flex-direction: row;
+    
+    color:rgb(141, 140, 140);
+}
+
+.sidebar-top-text .sidebar-top-icons{
+    margin-right: 1rem;
+    color: rgb(75, 75, 75);
+}
+img#logo{
+    margin-bottom: 2rem;
+    width: 70%;
+    height: 20%;
+}

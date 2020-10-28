@@ -1,4 +1,4 @@
-const cardSizeForEachSection = 5;
+const cardSizeForEachSection = 6;
 
 
 
@@ -68,36 +68,66 @@ const cardActions = function(){
     // let cards = document.querySelectorAll("section.page div.row div.col")
     // console.log(cards)
 
+    //This Part clones card for Mainpage
     for(let i=0;i<pages.length;i++){
-        let pageInnerSections = pages[i].querySelectorAll("section.container")
-        for(let j=0;j<pageInnerSections.length;j++){
-            let innerSectionRow = pageInnerSections[j].querySelector("div.row")
-            
-            for(let k = 0;k<cardSizeForEachSection; k++){
-                let newCard = sampleCard.cloneNode(true)
+        if(!(pages[i].classList.contains("about"))){
+            let pageInnerSections = pages[i].querySelectorAll("section.container")
+            for(let j=0;j<pageInnerSections.length;j++){
+                let innerSectionRow = pageInnerSections[j].querySelector("div.row")
                 
-                if(pageInnerSections[j].classList.contains("homepage")){
-                    //TODO Also change the sample card actions
-                    let cover = newCard.querySelector("img");
-                    let albumName = newCard.querySelector("h5")
-
-                    let contentIndex = getRandomInt(0,15)
-                    
-
-                    albumName.innerText = playlist[contentIndex].name
-                    cover["src"] = playlist[contentIndex].cover;
-                   
-                    changeAlbumPage(newCard,contentIndex)
+                for(let k = 0;k<cardSizeForEachSection; k++){
+                    let newCard = sampleCard.cloneNode(true)
+                    newCard.classList.remove("hide")
+                    if(pageInnerSections[j].classList.contains("homepage")){
+                        //TODO Also change the sample card actions
+                        let cover = newCard.querySelector("img");
+                        let albumName = newCard.querySelector("h5")
+    
+                        let contentIndex = getRandomInt(0,15)
+                        
+    
+                        albumName.innerText = playlist[contentIndex].name
+                        cover["src"] = playlist[contentIndex].cover;
+                       
+                        changeAlbumPage(newCard,contentIndex)
+                    }
+    
+                    else{
+                        //TODO write rules for artist page
+                        
+                        // cardActionForArtist()
+    
+                        
+                    }
+                    sampleCard.remove()
+                    innerSectionRow.appendChild(newCard)
                 }
-
-                else{
-                    //TODO write rules for artist page
-                }
-
-                innerSectionRow.appendChild(newCard)
             }
         }
+
     }
+}
+
+const cardActionForArtist = function(){
+    
+    
+    let pages = document.querySelectorAll("#artistpage section.page")
+    
+    for(let page of pages){
+        if(!(page.classList.contains("about"))){
+            let artistCards = page.querySelectorAll(".card")
+            
+            for(let i=0;i<artistCards.length;i++){
+                let cover = artistCards[i].querySelector("img"); 
+                let albumName = artistCards[i].querySelector("h5");
+                albumName.innerText = queen[i].album;
+                cover["src"] = queen[i].cover;
+           
+        }
+        }
+        
+    }
+    
 }
 
 const changeAlbumPage = function(card,index){
@@ -175,11 +205,12 @@ function getRandomInt(min, max) {
 window.onload = function(){
     navActions()
     cardActions()
+    cardActionForArtist()
     togglePlayPause()
     
     // changeAlbumPage()
     if(window.location.href.includes("artist")){
-        onAlbumPageLoad()
+        // onAlbumPageLoad()
     }
     // cardActionsArtistPage()
 

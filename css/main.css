@@ -185,3 +185,7 @@ img#logo{
 #player i:focus {
     outline: none;
 }
+
+#artistpage .round-button{
+    margin-bottom: 30px;
+}
