@@ -48,7 +48,7 @@ const playlist = [{
     songList:[],
 },{
     name:"Training",
-    cover:"./assets/playlist_covers/Training.jpeg",
+    cover:"./assets/playlist_covers/Training .jpeg",
     songList:[],
 },{
     name:"Romance",
@@ -56,7 +56,7 @@ const playlist = [{
     songList:[],
 },{
     name:"Drive",
-    cover:"./assets/playlist_covers/Drive.jpeg",
+    cover:"./assets/playlist_covers/Drive .jpeg",
     songList:[],
 },{
     name:"Focus",

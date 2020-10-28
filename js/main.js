@@ -3,9 +3,9 @@ const cardSizeForEachSection = 5;
 window.onload = function(){
     navActions()
     cardActions()
-    cardIMGTemplate()
+    
     togglePlayButton()
-   
+    changeAlbumPage()
     // cardActionsArtistPage()
 }
 
@@ -77,7 +77,7 @@ const cardActions = function(){
                     let cover = newCard.querySelector("img");
                     let albumName = newCard.querySelector("h5")
 
-                    let contentIndex = getRandomInt(0,14)
+                    let contentIndex = getRandomInt(0,16)
 
                     albumName.innerText = playlist[contentIndex].name
                     cover["src"] = playlist[contentIndex].cover;
@@ -93,8 +93,26 @@ const cardActions = function(){
     }
 }
 
-const homepageCardActions = function(card){
+const changeAlbumPage = function(){
     
+    let cards = document.querySelectorAll("#mainpage .card")
+    
+    
+    let pageHeader = document.querySelector(".artist-page-header")
+    
+    for(let i=0;i<cards.length;i++){
+        cards[i].addEventListener("click",(e)=>{
+            
+            window.location.href = "./pages/artist.html"
+            
+            
+            let newHeader = e.target.parentElement.querySelector("h5")
+            console.log(newHeader)
+            
+            // pageHeader.innerText = newHeader.innerText
+           
+        })
+    }
 }
 /*
 const cardIMGTemplate = function(){

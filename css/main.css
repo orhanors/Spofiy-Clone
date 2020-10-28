@@ -72,6 +72,8 @@ div.sidebar-top{
     color:rgb(141, 140, 140);
 }
 
+
+
 .sidebar-top-text .sidebar-top-icons{
     margin-right: 1rem;
     color: rgb(75, 75, 75);
@@ -162,5 +164,11 @@ img#logo{
     
 }
 
+#player{
+    display: flex;
+    justify-content: center;
+}
 
-
+#player audio{
+    background-color: transparent;
+}
