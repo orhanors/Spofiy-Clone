@@ -92,3 +92,7 @@
     box-shadow: 0px 0px 20px #049135;
     text-shadow: 0px 0px 10px #144225;
   }
+
+  #likeBtn:hover{
+    font-size: larger;
+  }

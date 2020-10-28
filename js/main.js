@@ -1,17 +1,21 @@
 const cardSizeForEachSection = 5;
 
-window.onload = function(){
-    navActions()
-    cardActions()
-    
-    togglePlayButton()
-    changeAlbumPage()
-    // cardActionsArtistPage()
-}
+
 
 /**
  * This function changes active class of navbar
  */
+
+
+const onAlbumPageLoad = function(){
+     const urlParams = new URLSearchParams(window.location.search); 
+     const id = urlParams.get('id');
+
+     const album = playlist.find((item)=>{
+        return item.id === id;
+     })
+     return album.id
+}
 
 const navActions = function(){
     let navList = document.querySelectorAll(".col-10 nav ul li");
@@ -77,10 +81,13 @@ const cardActions = function(){
                     let cover = newCard.querySelector("img");
                     let albumName = newCard.querySelector("h5")
 
-                    let contentIndex = getRandomInt(0,16)
+                    let contentIndex = getRandomInt(0,15)
+                    
 
                     albumName.innerText = playlist[contentIndex].name
                     cover["src"] = playlist[contentIndex].cover;
+                   
+                    changeAlbumPage(newCard,contentIndex)
                 }
 
                 else{
@@ -93,26 +100,25 @@ const cardActions = function(){
     }
 }
 
-const changeAlbumPage = function(){
+const changeAlbumPage = function(card,index){
     
-    let cards = document.querySelectorAll("#mainpage .card")
-    
-    
-    let pageHeader = document.querySelector(".artist-page-header")
-    
-    for(let i=0;i<cards.length;i++){
-        cards[i].addEventListener("click",(e)=>{
+        card.addEventListener("click",(e)=>{
             
-            window.location.href = "./pages/artist.html"
+            // window.location.href = `./pages/artist.html?id=${playlist[index].id}`
+            let playImg = document.querySelector("#player img")
+            let playTitle = document.querySelector(".player-title p")
+            let playSubTitle = document.querySelector(".player-title p:nth-of-type(2)")
+
+            playImg["src"] = card.querySelector("img")["src"];
+            playTitle.innerText = card.querySelector("h5").innerText
+            playSubTitle.innerText = `${playTitle.innerText} Playlis...`
+            // let newHeader = e.target.parentElement.querySelector("h5")
             
-            
-            let newHeader = e.target.parentElement.querySelector("h5")
-            console.log(newHeader)
             
             // pageHeader.innerText = newHeader.innerText
            
         })
-    }
+    
 }
 /*
 const cardIMGTemplate = function(){
@@ -132,23 +138,51 @@ const cardIMGTemplate = function(){
 }
 */
 
-const togglePlayButton = function(){
-    let playButtons = document.querySelectorAll(".card .round-button");
-    let pauseButton = `<i class="mr-2 fas fa-grip-lines-vertical"></i>`
-    let playButton = `<i class="mb-2 mr-1 fa fa-play fa-sm"></i>`
-    for(let button of playButtons){
-        
-        button.addEventListener("click",(e)=>{
-            
-           
-        })
+const togglePlayPause = function(){
+    let play = document.querySelectorAll(".play");
+    let pause = document.querySelectorAll(".pause");
 
+
+    for(let btn of play){
+        btn.addEventListener("click",(e)=>{
+            for(let btn2 of pause){
+                btn.classList.add("hide")
+                btn2.classList.remove("hide")
+            }
+            
+            
+        })
+    }
+
+    for(let btn of pause){
+        btn.addEventListener("click",(e)=>{
+            for(let btn2 of play){
+                btn.classList.add("hide")
+                btn2.classList.remove("hide")
+            }
+            
+            
+        })
     }
 }
-
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+window.onload = function(){
+    navActions()
+    cardActions()
+    togglePlayPause()
+    
+    // changeAlbumPage()
+    if(window.location.href.includes("artist")){
+        onAlbumPageLoad()
+    }
+    // cardActionsArtistPage()
+
+   
+
 }

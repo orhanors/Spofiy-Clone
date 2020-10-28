@@ -1,73 +1,66 @@
 const playlist = [{
+    id:"1",
     name:"Vintage",
     cover:"./assets/playlist_covers/Vintage.jpeg",
     songList:[],
-},{
+},{id:"2",
     name:"Moon",
     cover:"/assets/playlist_covers/Moon.jpeg",
     songList:[],
-},{
+},{id:"3",
     name:"Sweet Gangsta",
     cover:"./assets/playlist_covers/Sweet Gangsta .jpeg",
     songList:[],
-},{
+},{id:"4",
     name:"Tastemakers",
     cover:"./assets/playlist_covers/Tastemakers.jpeg",
     songList:[],
-},{
+},{id:"5",
     name:"At Work",
     cover:"./assets/playlist_covers/At Work.jpeg",
     songList:[],
-},{
+},{id:"6",
     name:"Sunshine",
     cover:"./assets/playlist_covers/Sunshine .jpeg",
     songList:[],
-},{
+},{id:"7",
     name:"Party",
     cover:"./assets/playlist_covers/Party.jpeg",
     songList:[],
-},{
+},{id:"8",
     name:"Freedom",
     cover:"./assets/playlist_covers/Freedom .jpeg",
     songList:[],
-},{
+},{id:"9",
     name:"Made for you",
     cover:"./assets/playlist_covers/Made for you.jpeg",
     songList:[],
-},{
+},{id:"11",
     name:"Kitchen",
     cover:"./assets/playlist_covers/Kitchen .jpeg",
     songList:[],
-},{
+},{id:"12",
     name:"French Rap",
     cover:"./assets/playlist_covers/French Rap .jpeg",
     songList:[],
-},{
+},{id:"13",
     name:"Soul",
     cover:"./assets/playlist_covers/Soul.jpeg",
     songList:[],
-},{
+},{id:"14",
     name:"Training",
     cover:"./assets/playlist_covers/Training .jpeg",
     songList:[],
-},{
+},{id:"15",
     name:"Romance",
     cover:"./assets/playlist_covers/Romance.jpeg",
     songList:[],
-},{
+},{id:"16",
     name:"Drive",
     cover:"./assets/playlist_covers/Drive .jpeg",
     songList:[],
-},{
+},{id:"17",
     name:"Focus",
     cover:"./assets/playlist_covers/Focus.jpeg",
     songList:[],
-},{
-    name:"Focus",
-    cover:"./assets/playlist_covers/Focus.jpeg",
-    songList:[],
-},{
-    name:"Focus",
-    cover:"./assets/playlist_covers/Focus.jpeg",
-    songList:[],
-}]
+}];

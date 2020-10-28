@@ -22,8 +22,7 @@ section.page.displayShow{
 /* Page Structure
 ------------------>*/
 #sidebar{
-    font-family: 'Montserrat', sans-
-    serif;
+    font-family: 'Montserrat', sans-serif;
     position: fixed; 
     height: 90vh;
     background-color: #050505;
@@ -130,6 +129,7 @@ img#logo{
     background-color: transparent;
     border: none;
     position: relative;
+    text-shadow: 10px 10px 10px #000000; 
    
 }
 
@@ -164,11 +164,24 @@ img#logo{
     
 }
 
-#player{
-    display: flex;
-    justify-content: center;
+.player-title p:nth-of-type(1){
+    margin: 0;
+    color: #DEF8FF;
+    font-family: 'Montserrat', sans-serif;
+    /* box-shadow: 0px 0px 10px #070707; */
+    text-shadow: 0px 0px 10px #000000;
 }
 
-#player audio{
-    background-color: transparent;
+.player-title p:nth-of-type(2){
+    color: rgb(134, 131, 131);
+    margin-bottom: 1px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.hide{
+    display: none;
+}
+
+#player i:focus {
+    outline: none;
 }
