@@ -51,12 +51,12 @@ const playlist = [{
     cover:"./assets/playlist_covers/Training.jpeg",
     songList:[],
 },{
-    name:"Focus",
-    cover:"./assets/playlist_covers/Focus.jpeg",
+    name:"Romance",
+    cover:"./assets/playlist_covers/Romance.jpeg",
     songList:[],
 },{
-    name:"Focus",
-    cover:"./assets/playlist_covers/Focus.jpeg",
+    name:"Drive",
+    cover:"./assets/playlist_covers/Drive.jpeg",
     songList:[],
 },{
     name:"Focus",
