@@ -1,8 +1,8 @@
-const cardSizeForEachSection = 11;
+const cardSizeForEachSection = 5;
 
 window.onload = function(){
     navActions()
-    cardActionsMainPage()
+    cardActions()
     cardIMGTemplate()
     togglePlayButton()
    
@@ -58,7 +58,7 @@ const navPages = function(currentPageItem){
     }
 }
 
-const cardActionsMainPage = function(){
+const cardActions = function(){
     let sampleCard = document.querySelector(".col-10 section.page div.row div.col")
     let pages = document.querySelectorAll("section.page")
     // let cards = document.querySelectorAll("section.page div.row div.col")
@@ -71,12 +71,32 @@ const cardActionsMainPage = function(){
             
             for(let k = 0;k<cardSizeForEachSection; k++){
                 let newCard = sampleCard.cloneNode(true)
+                
+                if(pageInnerSections[j].classList.contains("homepage")){
+                    //TODO Also change the sample card actions
+                    let cover = newCard.querySelector("img");
+                    let albumName = newCard.querySelector("h5")
+
+                    let contentIndex = getRandomInt(0,14)
+
+                    albumName.innerText = playlist[contentIndex].name
+                    cover["src"] = playlist[contentIndex].cover;
+                }
+
+                else{
+                    //TODO write rules for artist page
+                }
+
                 innerSectionRow.appendChild(newCard)
             }
         }
     }
 }
 
+const homepageCardActions = function(card){
+    
+}
+/*
 const cardIMGTemplate = function(){
     let cards = document.querySelectorAll(".card img");
     let path = window.location.pathname;
@@ -92,6 +112,7 @@ const cardIMGTemplate = function(){
     }
 
 }
+*/
 
 const togglePlayButton = function(){
     let playButtons = document.querySelectorAll(".card .round-button");
@@ -105,4 +126,11 @@ const togglePlayButton = function(){
         })
 
     }
+}
+
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
