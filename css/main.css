@@ -4,7 +4,7 @@
 
 body{
     background-color: rgb(9, 65, 87); 
-    z-index: 0;
+    /* z-index: 0; */
     font-family: "Circular";
     
     
@@ -32,7 +32,7 @@ section.page.displayShow{
 #mainpage{
     margin-left: 16.6%;
     width: 90vh;
-    position: relative;
+    /* position: relative; */
     background-color: rgb(9, 65, 87);
 }
 
@@ -53,6 +53,7 @@ section.page.displayShow{
     height: 10%;
     background-color:#282828;
 }
+
 
 /*Sidebar
 ---------->*/
@@ -138,15 +139,14 @@ ul li{
    
 }
 
-#mainpage div.collapse.navbar-collapse{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    transform: translateX(-10%);
+.btn-group .btn-danger{
+    background-color: black !important;
+    border-color: black;
+   
 }
-
-#mainpage button{
-    /* TODO Re position collapsable menu button to the RIGHT*/
+.btn-group .dropdown-menu a{
+    background-color: rgb(33, 37, 41);
+    color:white;
 }
 
 /* Cards
