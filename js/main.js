@@ -210,8 +210,17 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function likedSongs(){
+    let liked = document.querySelector("#likedPage");
+
+    liked.addEventListener("click",()=>{
+        window.location.href = "../pages/likedSongs.html"
+    })
+}
+
 window.onload = function(){
     createPlaylist()
+    likedSongs()
     navActions()
     cardActions()
     cardActionForArtist()
