@@ -89,7 +89,8 @@ const cardActions = function(){
                         albumName.innerText = playlist[contentIndex].name
                         cover["src"] = playlist[contentIndex].cover;
                        
-                        changeAlbumPage(newCard,contentIndex)
+                        changePlayerContent(newCard,contentIndex)
+                       
                     }
     
                     else{
@@ -130,11 +131,12 @@ const cardActionForArtist = function(){
     
 }
 
-const changeAlbumPage = function(card,index){
+const changePlayerContent = function(card,index){
     
         card.addEventListener("click",(e)=>{
             
             // window.location.href = `./pages/artist.html?id=${playlist[index].id}`
+
             let playImg = document.querySelector("#player img")
             let playTitle = document.querySelector(".player-title p")
             let playSubTitle = document.querySelector(".player-title p:nth-of-type(2)")
@@ -142,12 +144,18 @@ const changeAlbumPage = function(card,index){
             playImg["src"] = card.querySelector("img")["src"];
             playTitle.innerText = card.querySelector("h5").innerText
             playSubTitle.innerText = `${playTitle.innerText} Playlis...`
-            // let newHeader = e.target.parentElement.querySelector("h5")
             
             
-            // pageHeader.innerText = newHeader.innerText
+            
+            let audioSrc = document.querySelector("audio source")
+
+            let playlistData = playlist.find(index => index.name == card.querySelector("h5").innerText)
+            console.log(audioSrc)
+            audioSrc["src"] = playlistData.song
+           
            
         })
+        
     
 }
 /*
@@ -209,7 +217,7 @@ window.onload = function(){
     cardActionForArtist()
     // togglePlayPause()
     
-    // changeAlbumPage()
+    // changePlayerContent()
     if(window.location.href.includes("artist")){
         // onAlbumPageLoad()
     }

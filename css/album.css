@@ -1,6 +1,6 @@
 body{
-        background-color: rgb(24, 19, 19) ;
-     color: rgb(141, 140, 140);
+    background-color: rgb(24, 19, 19) ;
+    color: rgb(141, 140, 140);
      
     }
 image#bobmarley{
@@ -10,9 +10,17 @@ image#bobmarley{
     width: 70%;
     height: 20%;
 }
+#mainpage{
+    margin-left: 16.6%;
+    height: 950px !important;
+    width: 100vh !important;
+    position: relative;
+    background-color: rgb(24, 19, 19);
+}
+
 #mainpage p {
     font-size: 0.8rem;
-    margin-top: 1rem;
+    margin-top: 0.4rem;
     
 }
 #mainpage table{
