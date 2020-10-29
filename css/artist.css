@@ -110,3 +110,7 @@ body{
     position: absolute;
     top:1000px;
 }
+
+#artistpage .about p{
+    color:rgb(163, 158, 158);
+}
