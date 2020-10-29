@@ -106,11 +106,9 @@ body{
     color:white;
 }
 
-#artistPage .round-button{
-    position: absolute;
-    top:1000px;
+#artistpage .round-button{
+    margin-bottom: 30px;
 }
-
 #artistpage .about p{
     color:rgb(163, 158, 158);
 }

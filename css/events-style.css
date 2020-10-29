@@ -96,3 +96,46 @@
   #likeBtn:hover{
     font-size: larger;
   }
+
+  /*Playlist icons*/
+
+  #sidebar .create-playlist:hover{
+    color: whitesmoke;
+    cursor: pointer;
+    
+  }
+
+  #sidebar .create-playlist:hover .create-icon,.create-icon2{
+    opacity: 50%;
+    
+  }
+
+  #playlist-name:focus{
+    background-color: #55cf80;
+  }
+
+  .add-playlist li:hover{
+    color:whitesmoke;
+    cursor: pointer;
+  }
+
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:rgb(160, 160, 160); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

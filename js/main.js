@@ -203,10 +203,11 @@ function getRandomInt(min, max) {
 }
 
 window.onload = function(){
+    createPlaylist()
     navActions()
     cardActions()
     cardActionForArtist()
-    togglePlayPause()
+    // togglePlayPause()
     
     // changeAlbumPage()
     if(window.location.href.includes("artist")){
