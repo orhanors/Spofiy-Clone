@@ -220,10 +220,12 @@ function likedSongs(){
 
 window.onload = function(){
     createPlaylist()
-    likedSongs()
+    
+    
     navActions()
     cardActions()
     cardActionForArtist()
+    likedSongs()
     // togglePlayPause()
     
     // changePlayerContent()
