@@ -3,11 +3,11 @@
 ------------------>*/
 
 body{
-    
 
     /* z-index: 0; */
     font-family: "Circular";
-    
+    /* background: linear-gradient(135deg, rgb(9, 65, 87), rgb(0, 0, 0)); */
+   
     
 }
 
@@ -33,10 +33,11 @@ section.page.displayShow{
 #mainpage{
     margin-left: 16.6%;
     width: 90vh;
-    height: 115vh;
+    
     /* position: relative; */
     /* background-color: rgb(9, 65, 87); */
     background: linear-gradient(135deg, rgb(9, 65, 87), rgb(0, 0, 0));
+    
 }
 
 /* #mainpage::before {
