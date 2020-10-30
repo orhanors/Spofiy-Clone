@@ -115,7 +115,26 @@
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link hvr-underline-from-center mx-0 mx-sm-2 mx-md-3" href="#">DISCOVER</a>
+<<<<<<< HEAD
                               </li>                             
+=======
+                              </li>
+                                
+                              
+                                <div class="dropdown mt-1 ml-5">
+                                  
+                                  <button style="position: relative;" class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="" style="width:32px;height: 32px;position: absolute; left:0px;bottom:3px " src="./assets/avatar.png" alt=""> <span class="ml-5">orhanors</span> 
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Account</a>
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a id="logoutMain" class="dropdown-item" href="#">Logout</a>
+                                  </div>
+                                </div>
+                              
+>>>>>>> orhan
                               
                            </ul>
                           </div>
@@ -483,11 +502,23 @@
     <script src="js/player.js"></script>
     <script src="js/helpers.js"></script>
     <script src="js/likedPage.js"></script>
+    <script src="js/login.js"></script>
     <!-- Font Awesome -->
     <script
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
       data-auto-a11y="true"
     ></script>
+
+    <script>
+      window.onload = function(){
+        createPlaylist()
+        navActions()
+        cardActions()
+        likedSongs()
+        
+        logout()
+      }
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
