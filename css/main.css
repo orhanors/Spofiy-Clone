@@ -139,16 +139,22 @@ ul li{
    
 }
 
-.btn-group .btn-danger{
-    background-color: black !important;
-    border-color: black;
-   
+
+
+.dropdown button{
+    opacity: 70%;
+    border-radius: 10rem;
+    background-color: black;
+    border: none;
+    color: whitesmoke;
 }
-.btn-group .dropdown-menu a{
-    background-color: rgb(33, 37, 41);
+.dropdown-menu{
+    background-color:rgb(33, 37, 41) ;
+    color: white;
+}
+.dropdown-menu a{
     color:white;
 }
-
 /* Cards
 ---------------> */
 

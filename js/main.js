@@ -219,13 +219,15 @@ function likedSongs(){
 }
 
 window.onload = function(){
-    createPlaylist()
+    // loginToPage()
+    // createPlaylist()
     
+   
+    // navActions()
+    // cardActions()
+    // cardActionForArtist()
+    // likedSongs()
     
-    navActions()
-    cardActions()
-    cardActionForArtist()
-    likedSongs()
     // togglePlayPause()
     
     // changePlayerContent()
@@ -237,3 +239,6 @@ window.onload = function(){
    
 
 }
+
+let dropdown = document.querySelector(".dropdown button span")
+console.log(dropdown.innerText == "orhanors")
