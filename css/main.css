@@ -145,8 +145,8 @@ ul li{
 
 
 
-<<<<<<< HEAD
-=======
+
+
 .dropdown button{
     opacity: 70%;
     border-radius: 10rem;
@@ -158,10 +158,9 @@ ul li{
     background-color:rgb(33, 37, 41) ;
     color: white;
 }
-.dropdown-menu a{
+nav .dropdown-menu a{
     color:white;
 }
->>>>>>> orhan
 /* Cards
 ---------------> */
 

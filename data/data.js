@@ -113,7 +113,9 @@ const queen = [{
     songs:[]
 },{
     album:"The Works",
-    cover:"https://i.pinimg.com/originals/ce/a6/ff/cea6ffddb1f9dd85200637a113467005.jpg",
+    
+    cover:"https://i.pinimg.com/originals/e6/09/fc/e609fc4fb757791e938c22ebe4126b50.jpg",
+
     songs:[]
 },{
     album:"A Kind of Magic",

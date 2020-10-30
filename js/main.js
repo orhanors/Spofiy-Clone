@@ -240,5 +240,4 @@ window.onload = function(){
 
 }
 
-let dropdown = document.querySelector(".dropdown button span")
-console.log(dropdown.innerText == "orhanors")
+
