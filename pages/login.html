@@ -26,9 +26,13 @@
       src="https://kit.fontawesome.com/6f47b95a54.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="#" href="../index.html">
     <!-- My CSS -->
-    
+    <style>
+      .hide{
+        display: none;
+      }
+    </style>
     <title>Welcome to spotify</title>
   </head>
   <body style='overflow-y: auto;'>
@@ -91,10 +95,29 @@
             <span>SIGN UP ON SPOTIFY</span>
           </div>
         </div>
+
+        <div class="login-footer">
+          
+          <div id="tryfree" class="login-button login-signup">
+            <span>TRY FOR FREE</span>
+          </div>
+        </div>
       </div>
     </section>
 
+    <div class="advertising hide mt-5">
+      <div class="img" style="position: relative;">
+      <img src="../assets/strive.png" alt="" style="margin-top: 50px; margin-right: 50px;">
+      <div class="spinner-border" role="status" style="position: absolute; left:50%;top:50%">
+        <span class="sr-only">Loading...</span>
+        <script>
+          let free = document.querySelector(".dropdown span")
+          free.innerText = "user"
+        </script>
+      </div>
+      </div>
 
+    </div>
     <script src="../js/login.js"></script>
     <script src="../js/main.js"></script>
     <!-- <script src="script.js"></script> -->
@@ -111,6 +134,7 @@
     ></script>
     <script>
       loginToPage()
+      tryForFree()
     </script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
