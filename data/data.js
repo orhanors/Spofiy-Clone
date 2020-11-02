@@ -7,7 +7,7 @@ const playlist = [{
     songList:["Daft Punk-Get Lucky","Daft Punk-Instant Crush","Wiz Khalifa-Taylor Gang"]
 },{id:"2",
     name:"Moon",
-    cover:"/assets/playlist_covers/Moon.jpeg",
+    cover:"./assets/playlist_covers/Moon.jpeg",
     song:"./assets/songs/yokohama.mp3",
     songList:["ZHU - Good Life","Ben Böhmer-Promise","Wiz Khalifa-Secret"]
 },{id:"3",
