@@ -1,4 +1,4 @@
-# Spofiy Clone
+# Spoftiy Clone with Bootstrap
 
 Old version clone of Spotify.created using HTML,CSS,JS and Bootstrap
 
